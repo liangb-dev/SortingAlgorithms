@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * Bubblesort is the one where you take every element
+ * and swap it with its neighbor until every element
+ * has been put in its place.
+ */
 public class Bubblesort implements  SortingAlgorithm {
     /* Fields */
     private int[] input;
