@@ -1,6 +1,7 @@
 public class Mergesort implements SortingAlgorithm {
     /* Fields */
     private int[] input;
+    private static int count = 0;
 
     /* Constructor */
     Mergesort(int[] input) {
@@ -10,7 +11,12 @@ public class Mergesort implements SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        mergesort();
+        System.out.println("=== Merge Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(mergesort());
+        System.out.println("with " + count + " iterations.");
     }
 
     private int[] mergesort() {

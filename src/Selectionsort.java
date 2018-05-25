@@ -8,6 +8,7 @@
 public class Selectionsort implements SortingAlgorithm {
     /* Fields */
     private int[] input;
+    private int count = 0;
 
     /* Constructor */
     Selectionsort(int[] input) {
@@ -17,7 +18,12 @@ public class Selectionsort implements SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        selectionsort();
+        System.out.println("=== Selection Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(selectionsort());
+        System.out.println("with " + count + " iterations.");
     }
 
     /**
@@ -35,6 +41,7 @@ public class Selectionsort implements SortingAlgorithm {
                 if (input[min_index]> input[j]) {
                     min_index= j;
                 }
+                count++;
             }
             // swap
             int tmp = input[min_index];

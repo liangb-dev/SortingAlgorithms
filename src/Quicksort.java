@@ -2,6 +2,7 @@
 public class Quicksort implements SortingAlgorithm {
     /* Fields */
     private int[] input;
+    private static int count = 0;
 
     /* Constructor */
     Quicksort(int[] input) {
@@ -11,7 +12,12 @@ public class Quicksort implements SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        quicksort();
+        System.out.println("=== Quick Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(quicksort());
+        System.out.println("with " + count + " iterations.");
     }
 
     private int[] quicksort() {

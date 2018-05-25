@@ -1,6 +1,7 @@
 public class Heapsort implements SortingAlgorithm {
     /* Fields */
     private int[] input;
+    private static int count = 0;
 
     /* Constructor */
     Heapsort(int[] input) {
@@ -10,7 +11,12 @@ public class Heapsort implements SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        heapsort();
+        System.out.println("=== Heapsort Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(heapsort());
+        System.out.println("with " + count + " iterations.");
     }
 
     private int[] heapsort() {

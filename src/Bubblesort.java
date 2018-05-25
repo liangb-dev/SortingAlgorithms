@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Bubblesort implements  SortingAlgorithm {
     /* Fields */
     private int[] input;
+    private int count = 0;
 
     /* Constructor */
     Bubblesort(int[] input) {
@@ -16,7 +17,12 @@ public class Bubblesort implements  SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        bubblesort();
+        System.out.println("=== Bubble Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(bubblesort());
+        System.out.println("with " + count + " iterations.");
     }
 
 
@@ -39,10 +45,10 @@ public class Bubblesort implements  SortingAlgorithm {
                     input[j-1] = input[j];
                     input[j] = temp;
                 }
+                count++;
             }
         }
 
-        printArrayList(Array2ArrayList(input));
         return input;
     }
 
@@ -145,7 +151,6 @@ public class Bubblesort implements  SortingAlgorithm {
             }
             //count++;
         }
-        printArrayList(input);
 
         return Arraylist2Array(input);
     }
@@ -221,6 +226,19 @@ public class Bubblesort implements  SortingAlgorithm {
             }
         }
         return true;
+    }
+
+
+    /**
+     * Prints an Array inline
+     * @param arr
+     */
+    private void printArray(int[] arr) {
+        String line = "";
+        for (int obj : arr) {
+            line += Integer.toString(obj) + " ";
+        }
+        System.out.println("'" + line.substring(0,line.length()-1) + "'");
     }
 
 }

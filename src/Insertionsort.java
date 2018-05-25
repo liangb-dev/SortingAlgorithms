@@ -1,7 +1,7 @@
 public class Insertionsort implements SortingAlgorithm {
     /* Fields */
     private int[] input;
-
+    private static int count = 0;
     /* Constructor */
     Insertionsort(int[] input) {
         this.input = input;
@@ -10,7 +10,12 @@ public class Insertionsort implements SortingAlgorithm {
 
     /* Methods */
     public void sort() {
-        insertionsort();
+        System.out.println("=== Insertion Sort ===");
+        System.out.println("You've asked to sort: ");
+        printArray(input);
+        System.out.println("\nThe sorted results are: ");
+        printArray(insertionsort());
+        System.out.println("with " + count + " iterations.");
     }
 
 
@@ -23,7 +28,6 @@ public class Insertionsort implements SortingAlgorithm {
      */
     private int[] insertionsort() {
         int size = input.length;
-        int count = 0;
         for (int i=1;i<size;i++) {
             int key = input[i];
             int j = i-1;
@@ -32,10 +36,8 @@ public class Insertionsort implements SortingAlgorithm {
                 input[j+1] = input[j];
                 j--;
                 count++;
-                System.out.println(count);
             }
             input[j+1] = key;
-            printArray(input);
         }
         return input;
     }
