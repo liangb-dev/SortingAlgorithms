@@ -14,6 +14,8 @@ public class Selectionsort implements SortingAlgorithm {
         this.input = input;
     }
 
+
+    /* Methods */
     public void sort() {
         selectionsort();
     }
