@@ -3,7 +3,7 @@
 A collection of common sorting algorithms for practice. 
 Each is written in its own class and implements a common interface - <i>SortingAlgorithm</i> -
 and the common method - <i>sort()</i>, which looks something like this:
-<pre>
+```java
 1    public void sort() {
 2        System.out.println("=== Insertion Sort ===");
 3        System.out.println("You've asked to sort: ");
@@ -12,7 +12,7 @@ and the common method - <i>sort()</i>, which looks something like this:
 6        printArray(insertionsort());
 7        System.out.println("with " + count + " iterations.");
 8    }
-</pre>
+```
 Some classes have a sort1() or even sort2() because my original attempt was inferior to
 the official solution but I wanted to keep the history for future record. 
 
