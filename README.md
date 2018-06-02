@@ -1,7 +1,7 @@
 # SortingAlgorithms
 
 A collection of common sorting algorithms for practice. 
-Each is written in its own class and implements a common interface - <i>SortingAlgorithm</i> -
+Each is written in its own class and implements a common interface - <a href=/src/SortingAlgorithm.java>SortingAlgorithm</a> -
 and the common method - <i>sort()</i>, which looks something like this:
 ```java
 1    public void sort() {
@@ -17,7 +17,7 @@ Some classes have a sort1() or even sort2() because my original attempt was infe
 the official solution but I wanted to keep the history for future record. 
 
 <h2>Content</h2> 
-<h3>Bubblesort.java</h3>
+<h3><a href=/src/Bubblesort.java>Bubblesort.java</a></h3></a>
 <pre>
 1    private int[] bubblesort() {
 2        int n = input.length;
@@ -35,11 +35,11 @@ the official solution but I wanted to keep the history for future record.
 14        return input;
 15    }
 </pre>
-<h3>Heapsort.java</h3>
+<a href=/src/Heapsort.java><h3>Heapsort.java</h3></a>
 <pre>
 
 </pre>
-<h3>Insertionsort.java</h3>
+<h3><a href=/src/Insertionsort.java>Insertionsort.java</a></h3>
 <pre>
 1    private int[] insertionsort() {
 2        int size = input.length;
@@ -55,11 +55,11 @@ the official solution but I wanted to keep the history for future record.
 12        return input;
 13    }
 </pre>
-<h3>Mergesort.java</h3>
+<h3><a href=/src/Mergesort.java>Mergesort.java</a></h3>
 <pre>
 
 </pre>
-<h3>Quicksort.java</h3>
+<h3><a href=/src/Quicksort.java>Quicksort.java</a></h3>
 <pre>
 1  private int[] quicksort(int[] arr, int low, int high) {
 2        if (low < high) {
@@ -88,7 +88,7 @@ the official solution but I wanted to keep the history for future record.
 25        return i+1;
 26    }
 </pre>
-<h3>Selectionsort.java</h3>
+<h3><a href=/src/Selectionsort.java>Selectionsort.java</a></h3>
 <pre>
 1    private int[] selectionsort() {
 2        for (int i = 0;i < input.length-1; i++) {
