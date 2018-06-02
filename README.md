@@ -55,7 +55,7 @@ the official solution but I wanted to keep the history for future record.
 12        return input;
 13    }
 </pre>
-<h3><a href=/src/Mergesort.java>Mergesort.java</a></h3>
+<h3>Mergesort.java</h3>
 <pre>
 
 </pre>
